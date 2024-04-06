@@ -8,5 +8,5 @@ Esse Projeto é um trabalho feito em um curso da Rocketseat e me ajudou a entend
 - JavaScript
 
 
-![ProjetoZapChat](https://github.com/henriquearaujooficial/ProjetoDev/blob/main/Telaprincipal.png)
+![ProjetoDev](https://github.com/henriquearaujooficial/ProjetoDev/blob/main/Telaprincipal.png)
 # ProjetoDevNovo
