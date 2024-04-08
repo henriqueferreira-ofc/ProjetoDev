@@ -18,7 +18,7 @@ Meu Projeto desenvolvido em um curso promovido pela Rocketseat na WEB. <br/>
 
 <br>
 
-![ProjetoDev](https://github.com/henriquearaujooficial/ProjetoDev/blob/main/Telaprincipal.png)
+![ProjetoDev](https://github.com/henriquearaujooficial/ProjetoDev/blob/main/assets/.github/Telaprincipal.png)
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
