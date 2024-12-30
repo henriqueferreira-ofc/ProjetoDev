@@ -34,7 +34,7 @@ O Projeto Dev foi feito em um curso da Rocketseat e aumentou meu desenpenho posi
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1187422022288947321). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/ugxcVLR8uDnySuq0uPze4y/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?t=ZZvB2irPs4CPmNRz-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
