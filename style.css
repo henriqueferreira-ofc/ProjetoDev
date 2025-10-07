@@ -12,6 +12,10 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
+  --switch-track-bg: linear-gradient(120deg, rgba(76, 39, 105, 0.85), rgba(44, 18, 64, 0.85));
+  --switch-track-border: rgba(255, 255, 255, 0.45);
+  --switch-knob-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  --switch-knob-border: rgba(0, 0, 0, 0.25);
 }
 
 .light {
@@ -22,6 +26,10 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
+  --switch-track-bg: linear-gradient(120deg, rgba(227, 227, 227, 0.9), rgba(203, 203, 203, 0.9));
+  --switch-track-border: rgba(0, 0, 0, 0.12);
+  --switch-knob-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --switch-knob-border: rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -60,28 +68,39 @@ body * {
 /* Switch */
 #switch {
   position: relative;
-  width: 64px;
-
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 76px;
+  height: 36px;
+  padding: 0 6px;
   margin: 4px auto;
+  background: var(--switch-track-bg);
+  border: 1px solid var(--switch-track-border);
+  border-radius: 9999px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
 }
+
 #switch button {
-  width: 32px;
-  height: 32px;
-  background: white var(--switch-bg-url) no-repeat center;
-  border: 0;
-  border-radius: 50%;
-
-  position: absolute;
-  top: 50%;
-  left: 0;
+  position: relative;
   z-index: 1;
-  transform: translateY(-50%);
-
-  animation: slide-out 0.3s;
-}
-
-.light #switch button {
-  animation: slide-in 0.3s forwards;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  background-image: var(--switch-bg-url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 38%;
+  border: 1px solid var(--switch-knob-border);
+  border-radius: 50%;
+  box-shadow: var(--switch-knob-shadow);
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-left: -6px;
 }
 
 #switch button:hover {
@@ -89,14 +108,14 @@ body * {
 }
 
 #switch span {
-  display: block;
-  width: 64px;
-  height: 24px;
-  background: var(--surface-color);
-  border: 1px solid var(--stroke-color);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  position: absolute;
+  inset: 0;
   border-radius: 9999px;
+  pointer-events: none;
+}
+
+.light #switch button {
+  transform: translateX(36px);
 }
 
 /* links */
@@ -171,24 +190,5 @@ footer {
   }
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
-  }
-}
-
-/* animation */
-@keyframes slide-in {
-  from {
-    left: 0;
-  }
-  to {
-    left: 50%;
-  }
-}
-
-@keyframes slide-out {
-  from {
-    left: 50%;
-  }
-  to {
-    left: 0;
   }
 }
