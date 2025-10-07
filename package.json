@@ -1,0 +1,13 @@
+{
+  "name": "projetodev",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Projeto Dev</h1>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
